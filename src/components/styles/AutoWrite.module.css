@@ -1,0 +1,24 @@
+.h1 {
+	font-size: 3.5vw;
+	font-family: 'Mulish';
+	margin: 1%;
+}
+
+.h1 span {
+	color:  #00ffe9;
+	text-shadow: 0 0 .2vw #00ffe9;
+}
+
+.cursor {
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.05vw;
+	width: .2vw;
+	animation: blink .6s infinite;
+}
+
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  50% { background-color: transparent; }
+  90% { background-color: #ccc; }
+}

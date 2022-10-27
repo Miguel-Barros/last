@@ -1,0 +1,52 @@
+.header {
+	width: 100vw;
+	max-width: 80%;
+	height: 10vh;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Mulish';
+	margin-bottom: 1%;
+}
+
+.header .logo {
+	display: flex;
+	align-self: flex-end;
+	font-size: 3vw;
+	font-weight: 600;
+	cursor: pointer;
+	color:  #00ffe9;
+	text-shadow: 0 0 .2vw #00ffe9;
+	letter-spacing: 1vw;
+}
+
+.header ul{
+	width: 65%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.header ul li {
+	font-family: 'Baloo 2';
+	width: 35%;
+	height: 50%;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.6vw;
+	cursor: pointer;
+	border-bottom: .2vw solid #005c54;
+	margin-left: 1%;
+	margin-right: 2%;
+	color:  #fff;
+	transition: all .5s ease;
+}
+
+.header ul li:hover {
+	font-size: 1.7vw;
+	color: #00ffe9;
+	text-shadow: 0 0 .2vw #00ffe9;
+	border-bottom: .2vw solid #00ffe9;
+}
