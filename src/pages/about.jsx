@@ -19,9 +19,9 @@ export default function About() {
 					<h2>Full-stack & UX Design</h2>
 				</span>
 				<span className={styles.right}>
-					<p>Eu sou <span>Miguel Barros &nbsp;</span> Minha conexão com a técnologia foi paixão a primeira vista, esse universo de possibilidades infinitas é muito fascinante, mostrou-me um caminho e tornou quem sou hoje.</p>
+					<p>Eu sou <span>Miguel Barros&nbsp;</span><br />Minha conexão com a técnologia foi paixão a primeira vista, esse universo de possibilidades infinitas é muito fascinante, mostrou-me um caminho e tornou quem sou hoje.</p>
 				</span>
-				<ScrollBar />
+				<SideBar />
 			</main>
 		</div>
 	)

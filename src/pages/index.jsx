@@ -14,7 +14,6 @@ export default function Home() {
       </Head>
       <Nav/>
       <main className={styles.main}>
-      <ScrollBar />
       <span className={`${styles.glass} ${styles.secundary}`}/>
       <span className={`${styles.glass}`}/>
         <div className={styles.box}>
