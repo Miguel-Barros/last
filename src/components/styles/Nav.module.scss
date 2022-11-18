@@ -1,0 +1,48 @@
+@import "../../pages/styles/Variables.module.scss";
+
+.nav {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 10%;
+    max-width: 80%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 60%;
+    height: 100%;
+}
+
+.nav ul li {
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: calc(1rem + 0.5vw);
+    color: $text-light;
+    transition: all .3s ease;
+}
+
+.nav ul li:hover {
+    transform: scale(1.05);
+    color: $highlight;
+}
+
+.nav ul li.active {
+    color: $highlight;
+}
+
+.nav .logo {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(2rem + 0.5vw);
+    letter-spacing: calc(1rem + 0.1vw);
+    color: #FC482C;
+}
