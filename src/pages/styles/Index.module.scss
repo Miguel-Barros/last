@@ -4,6 +4,59 @@
     width: 100vw;
     height: 100vh;
     background: $background;
-    display: flex;
 }
 
+.container .main {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: 2% auto;
+}
+
+.main .left,
+.main .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $text-light;
+    font-family: 'Rubik';
+    font-size: calc(2.5rem + 0.5vw);
+}
+
+.main .arrow_line {
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+}
+
+.main .title span {
+    color: $highlight;
+}
+
+.main p {
+    width: 70%;
+    color: $text-light;
+    font-size: calc(1rem + 0.5vw);
+    text-align: justify;
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+
+.main .right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main .right .illustration {
+    width: 65%;
+    height: 65%;
+}

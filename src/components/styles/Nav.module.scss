@@ -12,12 +12,12 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    width: 60%;
+    width: 65%;
     height: 100%;
 }
 
 .nav ul li {
-    font-family: "Mulish";
+    font-family: "Rubik";
     font-weight: 700;
     font-size: calc(1rem + 0.5vw);
     color: $text-light;
@@ -44,5 +44,5 @@
     font-weight: 700;
     font-size: calc(2rem + 0.5vw);
     letter-spacing: calc(1rem + 0.1vw);
-    color: #FC482C;
+    color: $highlight;
 }

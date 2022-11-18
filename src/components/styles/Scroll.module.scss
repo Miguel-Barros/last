@@ -1,0 +1,23 @@
+@import '../../pages/styles/Variables.module.scss';
+
+.scroll {
+    position: absolute;
+    right: 5vw;
+    top: 13vh;
+    overflow-y: scroll;
+    height: 80%;
+    width: 10%;
+}
+
+.scroll::-webkit-scrollbar {
+    border-radius: calc(1rem + 0.5vw);
+    width: calc(0.1rem + 0.5vw);
+    background: $highlight;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    width: 1px;
+    height: 1px;
+    border-radius: calc(1rem + 0.5vw);
+    background: $primary;
+}
