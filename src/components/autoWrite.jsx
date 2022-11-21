@@ -1,4 +1,4 @@
-import styles from './styles/AutoWrite.module.css'
+import styles from './styles/AutoWrite.module.scss'
 import { useEffect } from 'react'
 
 export default function AutoWrite() {
@@ -49,7 +49,7 @@ export default function AutoWrite() {
 
 	return (
 		<>
-  		<h1 className={styles.h1}>Sou desenvolvedor <br/><span id={'typed-text'}></span>
+  		<h1 className={styles.title}>Sou desenvolvedor <br/><span id={'typed-text'}></span>
   		<span id={'cursor'} className={styles.cursor}>&nbsp;</span></h1>
 		</>
 		)

@@ -1,12 +1,13 @@
-.h1 {
-	font-size: 3.5vw;
-	font-family: 'Mulish';
-	margin: 1%;
+@import '../../pages/styles/Variables.module.scss';
+
+.title {
+    color: $text-light;
+    font-family: 'Rubik';
+    font-size: calc(2.5rem + 0.5vw);
 }
 
-.h1 span {
-	color:  #00ffe9;
-	text-shadow: 0 0 .2vw #00ffe9;
+.title span {
+	color: $highlight;
 }
 
 .cursor {

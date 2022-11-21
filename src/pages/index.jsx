@@ -2,6 +2,7 @@ import styles from './styles/Index.module.scss'
 import Head from 'next/head'
 import Nav from '../components/nav'
 import Scroll from '../components/scroll'
+import AutoWrite from '../components/autoWrite'
 
 export default function Index() {
   return (
@@ -13,8 +14,7 @@ export default function Index() {
       <main className={styles.main}>
         {/* <img className={styles.arrow_line} src="./assets/arrow-line.svg" alt="Last" /> */}
         <span className={styles.left}>
-          <h2 className={styles.title}>Sou desenvolvedor <br />
-            <span>Full Stack</span></h2>
+          <AutoWrite />
           <p>Seja bem vindo ao meu portifolio pessoal. Sinta-se livre para observar e avaliar alguns dos meus trabalhos pessoais e corporativos.</p>
         </span>
         <span className={styles.right}>
