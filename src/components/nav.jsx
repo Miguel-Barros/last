@@ -26,9 +26,9 @@ export default function Nav() {
             <ul>
                 <li><Link href="/about">Sobre</Link></li>
                 <li><Link href="/skills">Habilidades</Link></li>
-                <li><Link href="/">Formação</Link></li>
-                <li><Link href="/">Portifolio</Link></li>
-                <li><Link href="/">Contato</Link></li>
+                <li><Link href="/formation">Formação</Link></li>
+                <li><Link href="/portfolio">Portifolio</Link></li>
+                <li><Link href="/contact">Contato</Link></li>
             </ul>
         </nav>
     )

@@ -4,7 +4,7 @@ import Nav from '../components/nav'
 import ContactsBar from '../components/contacts'
 
 export default function About() {
-    
+
     return (
         <div className={styles.container}>
             <Head>
@@ -13,6 +13,9 @@ export default function About() {
             <Nav />
             <ContactsBar />
             <main className={styles.main}>
+                <div className={styles.left}>
+                    <img src="https://avatars.githubusercontent.com/u/79284434?v=4" alt="Profile-Github" />
+                </div>
             </main>
         </div>
     )

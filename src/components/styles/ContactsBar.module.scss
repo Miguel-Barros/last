@@ -1,6 +1,7 @@
 @import '../../pages/styles/Variables.module.scss';
 
 .bar {
+    position: absolute;
     width: 10%;
     height: 80%;
     display: flex;
