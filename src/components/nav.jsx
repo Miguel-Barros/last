@@ -2,6 +2,7 @@ import Link from "next/link"
 import styles from './styles/Nav.module.scss'
 
 export default function Nav() {
+    
     return (
         <nav className={styles.nav}>
             <h1 className={styles.logo}>

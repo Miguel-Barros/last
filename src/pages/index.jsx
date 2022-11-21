@@ -1,8 +1,8 @@
 import styles from './styles/Index.module.scss'
 import Head from 'next/head'
 import Nav from '../components/nav'
-import Scroll from '../components/scroll'
 import AutoWrite from '../components/autoWrite'
+import { Icon } from '@iconify/react'
 
 export default function Index() {
   return (
@@ -22,6 +22,9 @@ export default function Index() {
         </span>
       </main>
       <footer className={styles.footer}>
+        <p>Conhecer mais <br />
+          <Icon icon="material-symbols:keyboard-arrow-down-rounded" className={styles.arrow} />
+        </p>
       </footer>
     </div>
   )
