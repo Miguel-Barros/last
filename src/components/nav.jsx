@@ -11,7 +11,7 @@ export default function Nav() {
                 </Link>
             </h1>
             <ul>
-                <li><Link href="/">Sobre</Link></li>
+                <li><Link href="/about">Sobre</Link></li>
                 <li><Link href="/">Habilidades</Link></li>
                 <li><Link href="/">Formação</Link></li>
                 <li><Link href="/">Portifolio</Link></li>
