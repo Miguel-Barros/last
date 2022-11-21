@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Nav from '../components/nav'
 import AutoWrite from '../components/autoWrite'
 import { Icon } from '@iconify/react'
+import ContactsBar from '../components/contacts'
 
 export default function Index() {
   return (

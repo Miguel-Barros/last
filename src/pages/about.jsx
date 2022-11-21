@@ -4,6 +4,7 @@ import Nav from '../components/nav'
 import ContactsBar from '../components/contacts'
 
 export default function About() {
+    
     return (
         <div className={styles.container}>
             <Head>

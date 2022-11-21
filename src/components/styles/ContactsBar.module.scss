@@ -1,5 +1,37 @@
-.contactsBar {
-    width: 15%;
-    height: 100vh;
-    background: red;
+@import '../../pages/styles/Variables.module.scss';
+
+.bar {
+    width: 10%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar .line {
+    width: calc(0.01rem + 0.01vw);
+    height: 50%;
+    background: $highlight;
+}
+
+.bar .icons {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bar .icons .icon {
+    width: calc(45px + 0.5vw);
+    height: calc(45px + 0.5vw);
+    color: $text-light;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.bar .icons .icon:hover {
+    color: $highlight;
 }
