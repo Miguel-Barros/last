@@ -1,4 +1,4 @@
-@import '../../pages/styles/Variables.module.scss';
+@import '../../pages/styles/Base.module.scss';
 
 .container {
     width: 100vw;
@@ -10,4 +10,52 @@
     width: 80%;
     height: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .left,
+.main .right {
+    width: 50%;
+    height: 100%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .left img {
+    width: calc(60% - 1vw);
+    height: calc(60% - 1vw);
+    object-fit: cover;
+    border-radius: calc(20% - 1vw) 0px;
+    box-shadow: 0px 0px .5vw 0 $highlight;
+}
+
+.main .left p {
+    width: 55%;
+    text-align: center;
+    margin-top: 2%;
+    color: $text-light;
+    font-size: calc(1rem + 0.5vw);
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.main .right p {
+    width: 80%;
+    min-width: 500px;
+    font-size: calc(1.5rem + 0.5vw);
+    color: $text-light;
+    font-family: 'Mulish';
+    font-weight: 700;
+    text-align: justify;
+}
+
+.main .right p span {
+    color: $highlight;
+    font-weight: 800;
+    font-size: calc(2.5rem + 0.5vw);
 }
