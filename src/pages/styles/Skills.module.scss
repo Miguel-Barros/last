@@ -1,0 +1,58 @@
+@import './Base.module.scss';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: $background;
+}
+
+.main {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main p {
+    margin-top: 5%;
+    font-size: calc(1rem + 0.5vw);
+    color: $text-light;
+    font-family: 'Mulish';
+    font-weight: 700;
+    text-align: justify;
+}
+
+.main p span {
+    color: $highlight;
+}
+
+.skills_group {
+    width: 80%;
+    height: 80%;
+    margin-top: 3%;
+    display: flex;
+    background: blue;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills_group .row {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills_group .row .skill {
+    width: 20%;
+    height: 100%;
+    margin: -1%;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
