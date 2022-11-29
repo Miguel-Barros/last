@@ -13,19 +13,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.main p {
-    margin-top: 5%;
-    font-size: calc(1rem + 0.5vw);
-    color: $text-light;
-    font-family: 'Mulish';
-    font-weight: 700;
-    text-align: justify;
-}
+    p {
+        margin-top: 5%;
+        font-size: calc(1rem + 0.5vw);
+        color: $text-light;
+        font-family: 'Mulish';
+        font-weight: 700;
+        text-align: justify;
+    }
 
-.main p span {
-    color: $highlight;
+    span {
+        color: $highlight;
+    }
 }
 
 .skills_group {
@@ -33,26 +33,58 @@
     height: 80%;
     margin-top: 3%;
     display: flex;
-    background: blue;
     flex-wrap: wrap;
     justify-content: space-around;
-}
 
-.skills_group .row {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    .row {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
 
-.skills_group .row .skill {
-    width: 20%;
-    height: 100%;
-    margin: -1%;
-    background: green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        .skill {
+            width: calc(250px - 1vw);
+            height: calc(270px - 1vh);
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: calc(30px - 1vw);
+            box-shadow: 0 0 calc(25px - 1vw) 0 $text-light;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 0 calc(25px - 1vw) 0 $highlight;
+                transform: scale(1.05);
+            }
+            
+            .skill_icon {
+                width: calc(150px - 1vw);
+                height: calc(150px - 1vh);
+                color: $text-light;
+            }
+
+            &:hover::before {
+                content: 'Clique para ver mais';
+                color: $text-light;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: calc(.8rem + 0.5vw);
+                font-family: 'Mulish';
+                font-weight: 700;
+                background: rgba($color: $text-dark, $alpha: .9);
+                border-radius: calc(30px - 1vw);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
 }
