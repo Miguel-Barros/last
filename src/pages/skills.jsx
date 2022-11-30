@@ -4,8 +4,52 @@ import Nav from '../components/nav'
 import ContactsBar from '../components/contacts'
 import Scroll from '../components/scroll'
 import { Icon } from '@iconify/react'
+import { useEffect } from 'react'
 
-export default function skills() {
+export default function Skills() {
+
+  const skills = [
+    {
+      name: 'Sass',
+      icon: 'mdi:sass',
+      experience: 'junior'
+    },
+    {
+      name: 'React',
+      icon: 'mdi:react',
+      experience: 'junior'
+    },
+    {
+      name: 'Javascript',
+      icon: 'fa-brands:js-square',
+      experience: 'junior'
+    },
+    {
+      name: 'Firebase',
+      icon: 'mdi:firebase',
+      experience: 'junior'
+    },
+    {
+      name: 'Python',
+      icon: 'mdi:language-python',
+      experience: 'junior'
+    },
+    {
+      name: 'Next.js',
+      icon: 'cib:next-js',
+      experience: 'junior'
+    },
+  ]
+
+  useEffect(() => {
+    document.addEventListener('mousedown', (e) => {
+      if (e.target.className === styles.skill) {
+        alert('You clicked on a skill!')
+        return;
+      }
+    })
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,32 +61,14 @@ export default function skills() {
         <p>Essas são algumas das <span> principais </span> tecnologias que tenho <span> afinidade </span></p>
         <div className={styles.skills_group}>
           <div className={styles.row}>
-            <div className={styles.skill}>
-              <Icon icon="mdi:sass" className={styles.skill_icon} />
-              <p className={styles.skill_name}>Sass</p>
-            </div>
-            <div className={styles.skill}>
-              <Icon icon="mdi:react" className={styles.skill_icon} />
-              <p className={styles.skill_name}>React</p>
-            </div>
-            <div className={styles.skill}>
-              <Icon icon="fa-brands:js-square" className={styles.skill_icon} />
-              <p className={styles.skill_name}>Javascript</p>
-            </div>
-          </div>
-          <div className={styles.row}>
-            <div className={styles.skill}>
-              <Icon icon="mdi:firebase" className={styles.skill_icon} />
-              <p className={styles.skill_name}>Firebase</p>
-            </div>
-            <div className={styles.skill}>
-              <Icon icon="mdi:language-python" className={styles.skill_icon} />
-              <p className={styles.skill_name}>Python</p>
-            </div>
-            <div className={styles.skill}>
-              <Icon icon="cib:next-js" className={styles.skill_icon} />
-              <p className={styles.skill_name}>Next.js</p>
-            </div>
+            {skills.map((skill, index) => {
+              return (
+                <div key={index} className={styles.skill}>
+                  <Icon icon={skill.icon} className={styles.skill_icon} />
+                  <p className={styles.skill_name}>{skill.name}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </main>
