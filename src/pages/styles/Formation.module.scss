@@ -1,0 +1,81 @@
+@import '../styles/Base.module.scss';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: $background;
+}
+
+.main {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .formation_group {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        .row {
+            width: 100%;
+            max-width: calc(440px * 3);
+            height: 100%;
+            margin: 1%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+.formation_group .row .formation {
+    width: calc(350px - 1vw);
+    height: calc(350px - 1vh);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        width: calc(150px - 1vw);
+        height: calc(150px - 1vh);
+        color: $text-light;
+    }
+
+    .name {
+        width: 100%;
+        color: $highlight;
+        font-family: 'Mulish';
+        font-weight: 700;
+        text-align: center;
+        font-size: calc(2.5rem - 1vw);
+    }
+
+    .description {
+        width: 100%;
+        height: 45%;
+        color: $text-light;
+        font-family: 'Mulish';
+        font-weight: 400;
+        text-align: justify;
+        font-size: calc(2.35rem - 1vw);
+    }
+
+    .institution, .date {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: $primary;
+        font-family: 'Mulish';
+        font-weight: 700;
+        text-align: justify;
+        font-size: calc(2.2rem - 1vw);
+    }
+
+}

@@ -44,8 +44,7 @@ export default function Skills() {
   useEffect(() => {
     document.addEventListener('mousedown', (e) => {
       if (e.target.className === styles.skill) {
-        alert('You clicked on a skill!')
-        return;
+        return alert('Você clicou em uma skill!')
       }
     })
   }, [])
